@@ -9,7 +9,7 @@ This project contains a set of algorithms and graph operations, along with the n
 - **src/**: Contains all source files.
   - **.c files**: Contain the algorithms and graph operations.
   - **.py file**: Runs the experiments and handles plotting.
-- **output/**: Contains the output data generated after running the program.
+- **output/**: Contains the output data generated after running the program: a folder for every experiment and a results.json file with all calculated treewidths. Each folder containins the graph, the elimination orderings, the treedecompositions and the treewidths for all three heuristics. 
 
 ## Makefile Targets
 
