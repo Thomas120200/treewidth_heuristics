@@ -26,7 +26,7 @@ The project is automated using a Makefile, which includes several targets for di
   - Use this target to quickly verify that the code runs correctly.
 
 - **make plot**:
-  - Shows the plot after the heuristics have been run.
+  - this only hows the plot after the heuristics have been run (doesn't do experiments).
 
 - **make plot_precalc**:
   - Uses precalculated data from `./results.json` to show the plot for `n = [10, 100, 1000]` and `p = [0.25, 0.5, 0.75]`, each with 100 experiments.
@@ -39,3 +39,12 @@ To run the project, use the following commands:
 1. **Run all experiments and plot data:**
    ```sh
    make run
+2. **Run small set of experiments for verification:**
+   ```sh
+   make run_small
+3. **Only plot the data after running experiments:**
+   ```sh
+   make plot
+4. **Plot using precalculated data:**
+   ```sh
+   make plot_precalc
