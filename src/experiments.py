@@ -53,7 +53,7 @@ def main():
                     results.append(run_experiment(N, P, path))
         json.dump(results, open("./output/results.json", "w"))
 
-    elif args.plot:
+    elif args.plot or args.plot_precalc:
         if args.plot_precalc:
             results = json.load(open("./results_precalc.json"))
         else:
