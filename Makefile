@@ -31,6 +31,9 @@ $(SRC_DIR)/%.o: $(SRC_DIR)/%.c
 clean:
 	rm -rf $(OBJS) $(TARGET) $(SRC_DIR)/*.o output
 
+install:
+	pip3 install -r requirements.txt
+
 run_small: clean all
 	python3 ./src/experiments.py --run --small
 	python3 ./src/experiments.py --plot

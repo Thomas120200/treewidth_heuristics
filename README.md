@@ -14,6 +14,8 @@ This project contains a set of algorithms and graph operations, along with the n
 ## Makefile Targets
 
 The project is automated using a Makefile, which includes several targets for different tasks:
+- **make install**:
+  - installs all dependencies from the requirements.txt file
 
 - **make run**: 
   - Runs the heuristics for `n = [10, 100, 1000]` and `p = [0.25, 0.5, 0.75]`, each with 100 experiments.
@@ -35,6 +37,9 @@ The project is automated using a Makefile, which includes several targets for di
 ## Usage
 
 To run the project, use the following commands:
+1. **install dependencies**
+   ```sh
+   make install
 
 1. **Run all experiments and plot data:**
    ```sh
