@@ -55,7 +55,7 @@ def main():
 
     elif args.plot:
         if args.plot_precalc:
-            results = json.load(open("./results.json"))
+            results = json.load(open("./results_precalc.json"))
         else:
             results = json.load(open("./output/results.json"))
         min_degree = []
